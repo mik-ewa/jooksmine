@@ -52,12 +52,9 @@ import javax.inject.Inject
 @AndroidEntryPoint
 class TrackingActivity : AppCompatActivity(), SnapshotStyleListener {
 
-    @Inject
-    lateinit var networkTracker: NetworkTracker
-    @Inject
-    lateinit var sharedPreferencesManager: SharedPreferencesManager
-    @Inject
-    lateinit var dialogManager: DialogManager
+    @Inject lateinit var networkTracker: NetworkTracker
+    @Inject lateinit var sharedPreferencesManager: SharedPreferencesManager
+    @Inject lateinit var dialogManager: DialogManager
 
     private val binding by lazy { ActivityTrackingBinding.inflate(layoutInflater) }
 
@@ -139,14 +136,8 @@ class TrackingActivity : AppCompatActivity(), SnapshotStyleListener {
     }
 
     private fun requestLocationPermissions() {
-        if (ActivityCompat.checkSelfPermission(
-                this,
-                Manifest.permission.ACCESS_FINE_LOCATION
-            ) == PackageManager.PERMISSION_GRANTED &&
-            ActivityCompat.checkSelfPermission(
-                this,
-                Manifest.permission.ACCESS_COARSE_LOCATION
-            ) == PackageManager.PERMISSION_GRANTED
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED &&
+            ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED
         ) {
             initView()
         } else {
