@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:layout_width="@dimen/width_600"
+        android:layout_height="@dimen/height_400"
+        android:layout_marginTop="@dimen/margin_minus_100"
+        android:scaleType="fitXY"
+        android:src="@drawable/circle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_24"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            style="@style/CardHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tell_us_more_about_you" />
+
+        <TextView
+            style="@style/Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:text="@string/username" />
+
+        <EditText
+            android:id="@+id/input_username"
+            style="@style/ValueField"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_40"
+            android:layout_marginTop="@dimen/margin_5"
+            android:hint="@string/username"
+            android:inputType="textCapWords" />
+
+        <TextView
+            android:id="@+id/error_username"
+            style="@style/Error_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/error_this_username_is_taken"
+            android:visibility="invisible" />
+
+        <TextView
+            style="@style/Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/name" />
+
+        <EditText
+            android:id="@+id/input_name"
+            style="@style/ValueField"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_40"
+            android:layout_marginTop="@dimen/margin_5"
+            android:hint="@string/name"
+            android:inputType="textCapWords" />
+
+        <TextView
+            style="@style/Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:text="@string/gender_at_birth" />
+
+        <RadioGroup
+            android:id="@+id/radio_group_gender"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_40"
+            android:layout_marginTop="@dimen/margin_5"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_button_female"
+                style="@style/Body2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/margin_8"
+                android:layout_weight="1"
+                android:buttonTint="@color/black"
+                android:text="@string/female"
+                android:textColor="@color/black" />
+
+            <RadioButton
+                android:id="@+id/radio_button_male"
+                style="@style/Body2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/margin_5"
+                android:layout_weight="1"
+                android:buttonTint="@color/black"
+                android:buttonTintMode="src_in"
+                android:text="@string/male"
+                android:textColor="@color/black" />
+
+        </RadioGroup>
+
+        <TextView
+            style="@style/Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:text="@string/phone_number" />
+
+        <EditText
+            android:id="@+id/input_phone_number"
+            style="@style/ValueField"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_40"
+            android:layout_marginTop="@dimen/margin_5"
+            android:hint="@string/phone_number"
+            android:inputType="phone"
+            android:maxLength="9" />
+
+        <TextView
+            style="@style/Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:text="@string/weight_optional" />
+
+        <EditText
+            android:id="@+id/input_weight"
+            style="@style/ValueField"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_40"
+            android:layout_marginTop="@dimen/margin_5"
+            android:digits="0123456789."
+            android:hint="@string/weight"
+            android:maxLength="4" />
+
+        <TextView
+            style="@style/Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:text="@string/height_optional" />
+
+        <EditText
+            android:id="@+id/input_height"
+            style="@style/ValueField"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_40"
+            android:layout_marginTop="@dimen/margin_5"
+            android:hint="@string/height"
+            android:inputType="number"
+            android:maxLength="3" />
+
+        <com.example.fitness_tracking_app.base.PrimaryButton
+            android:id="@+id/button_complete_sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_50"
+            android:layout_margin="@dimen/margin_14"
+            app:isActive="false"
+            app:text="@string/complete_sign_up" />
+
+        <TextView
+            android:id="@+id/text_log_out"
+            style="@style/Body2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_36"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="@string/log_out" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

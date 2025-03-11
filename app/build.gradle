@@ -1,0 +1,152 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'com.google.devtools.ksp' version '1.7.20-1.0.8'
+    id 'kotlin-kapt'
+    id 'com.google.dagger.hilt.android'
+    id 'com.google.gms.google-services'
+    id 'kotlin-parcelize'
+}
+
+kotlin {
+    sourceSets {
+        debug {
+            kotlin.srcDir("build/generated/ksp/debug/kotlin")
+        }
+        release {
+            kotlin.srcDir("build/generated/ksp/release/kotlin")
+        }
+    }
+}
+
+android {
+    namespace 'com.example.fitness_tracking_app'
+    compileSdk 34
+
+    buildFeatures {
+        buildConfig true
+        viewBinding true
+    }
+
+    defaultConfig {
+        applicationId "com.example.fitness_tracking_app"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables {
+            useSupportLibrary true
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            buildConfigField("String", "WEATHER_API_KEY", "\"your_weather_api_key\"")
+            buildConfigField("String", "MAIN_FIREBASE_USER", "\"LJfPd3pNeva4BOoBDkjPzugV6gG2\"")
+            buildConfigField("String", "FIREBASE_DATABASE_URL", '"https://fitness-tracking-app-c8ff5-default-rtdb.europe-west1.firebasedatabase.app"')
+        }
+
+        debug {
+            buildConfigField("String", "WEATHER_API_KEY", "\"your_weather_api_key\"")
+            buildConfigField("String", "MAIN_FIREBASE_USER", "\"LJfPd3pNeva4BOoBDkjPzugV6gG2\"")
+            buildConfigField("String", "FIREBASE_DATABASE_URL", '"https://fitness-tracking-app-c8ff5-default-rtdb.europe-west1.firebasedatabase.app"')
+        }
+    }
+
+    flavorDimensions "mode"
+    productFlavors {
+        production {
+            dimension "mode"
+            buildConfigField "boolean", "AUTO_FRIEND_MODE", "false"
+        }
+        autoDemo {
+            dimension "mode"
+            buildConfigField "boolean", "AUTO_FRIEND_MODE", "true"
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    composeOptions {
+        kotlinCompilerExtensionVersion '1.3.2'
+    }
+    packagingOptions {
+        resources {
+            excludes += '/META-INF/{AL2.0,LGPL2.1}'
+        }
+    }
+
+    kapt {
+        correctErrorTypes true
+    }
+
+}
+
+dependencies {
+    implementation 'com.jakewharton.timber:timber:5.0.1'
+    implementation 'com.google.android.flexbox:flexbox:3.0.0'
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+    implementation "androidx.room:room-runtime:2.5.2"
+    kapt "androidx.room:room-compiler:2.5.2"
+    implementation "androidx.room:room-ktx:2.5.2"
+    implementation 'com.mapbox.maps:android:11.7.0'
+    implementation 'androidx.viewpager2:viewpager2:1.1.0'
+    implementation 'com.airbnb.android:lottie:6.0.0'
+    implementation 'androidx.core:core-ktx:1.12.0'
+    implementation platform('org.jetbrains.kotlin:kotlin-bom:1.8.0')
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.6.2'
+    implementation 'androidx.activity:activity-compose:1.8.2'
+    implementation platform('androidx.compose:compose-bom:2022.10.00')
+    implementation 'com.google.firebase:firebase-storage:21.0.0'
+    implementation 'androidx.compose.ui:ui'
+    implementation 'androidx.compose.ui:ui-graphics'
+    implementation "androidx.lifecycle:lifecycle-service:2.6.1"
+    implementation 'androidx.compose.ui:ui-tooling-preview'
+    implementation 'androidx.compose.material3:material3'
+    implementation 'com.google.firebase:firebase-auth:22.1.0'
+    implementation 'com.google.firebase:firebase-database:20.3.0'
+    implementation 'androidx.activity:activity:1.9.0'
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+    implementation 'androidx.activity:activity-ktx:1.8.2'
+    implementation 'androidx.fragment:fragment-ktx:1.6.2'
+    debugImplementation 'androidx.compose.ui:ui-tooling'
+    debugImplementation 'androidx.compose.ui:ui-test-manifest'
+    implementation 'com.github.bumptech.glide:glide:4.16.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.google.android.gms:play-services-maps:18.1.0'
+    implementation 'com.google.android.material:material:1.12.0'
+    implementation 'com.google.android.gms:play-services-location:21.0.1'
+    implementation "androidx.navigation:navigation-compose:2.7.6"
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.facebook.shimmer:shimmer:0.5.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'io.github.raamcosta.compose-destinations:core:1.9.50'
+    ksp 'io.github.raamcosta.compose-destinations:ksp:1.9.50'
+    implementation "com.google.dagger:hilt-android:2.44"
+    kapt "com.google.dagger:hilt-compiler:2.44"
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.10.0'
+
+    //testy
+    testImplementation "junit:junit:4.13.2"
+    testImplementation "org.mockito:mockito-core:4.0.0"
+    testImplementation "org.mockito.kotlin:mockito-kotlin:4.0.0"
+    testImplementation "io.mockk:mockk:1.12.4"
+    testImplementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.4"
+    testImplementation 'org.robolectric:robolectric:4.9.2'
+
+    androidTestImplementation 'androidx.test.ext:junit:1.2.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.6.1'
+    androidTestImplementation platform('androidx.compose:compose-bom:2022.10.00')
+    androidTestImplementation 'androidx.compose.ui:ui-test-junit4'
+
+}

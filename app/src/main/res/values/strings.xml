@@ -1,0 +1,260 @@
+<resources>
+    <string name="app_name">Jooksmine</string>
+    <string name="log_into_jooksmine">Log into Jooksmine</string>
+    <string name="create_new_account">Create new account</string>
+    <string name="complete_sign_up">Complete sign up</string>
+    <string name="something_went_wrong_try_again_later">Something went wrong. Try again later</string>
+    <string name="tell_us_more_about_you">Tell us more about you</string>
+    <string name="welcome_to_jooksmine">Welcome to Jooksmine</string>
+    <string name="email_address">E-mail address</string>
+    <string name="error_email_already_exists">E-mail address already exists in Jooksmine</string>
+    <string name="password">Password</string>
+    <string name="name">Name</string>
+    <string name="username">Username</string>
+    <string name="gender_at_birth">Gender at birth</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string name="phone_number">Phone number</string>
+    <string name="profile_photo">Profile photo</string>
+    <string name="weight">Weight</string>
+    <string name="weight_optional">Weight (kg) <i> - optional </i></string>
+    <string name="height">Height</string>
+    <string name="height_optional">Height (cm) <i> - optional</i></string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="log_in">Log in</string>
+    <string name="save">Save</string>
+    <string name="log_out">Log out</string>
+    <string name="next">Next</string>
+    <string name="send_code">Send code</string>
+    <string name="choose_your_motivation">Choose your motivation</string>
+    <string name="login_error">Login failed. Try again</string>
+    <string name="reset_password">Reset password</string>\
+    <string name="error_passwords_dont_match">Passwords don\'t match</string>
+    <string name="forgot_password_reset_password">Forgot your password? <b>Reset password</b></string>
+    <string name="new_to_jooksmine_create_new_account">New to Jooksmine? <b>Create new account</b></string>
+    <string name="settings">Settings</string>
+    <string name="body_measurements">Body measurements</string>
+    <string name="your_motivation">Your motivation</string>
+    <string name="home">Home</string>
+    <string name="no_internet_connection_title">No internet connection</string>
+    <string name="no_internet_connection_text">You are not connected to the internet. Continuing will require internet access.</string>
+    <string name="ok">OK</string>
+    <string name="not_yet_implemented">Not yet implemented</string>
+    <string name="about">About</string>
+    <string name="code_sent_to_an_email">Code sent to e-mail address %1$s\'</string>
+    <string name="data_successfully_updated">Data successfully updated</string>
+    <string name="notifications">Notifications</string>
+
+    //weather
+    <string name="to_temperature">%.0f °C</string>
+    <string name="to_humidity">H: %d%%</string>
+    <string name="to_wind">W: %.1f km/h</string>
+
+    //Progress Fragment
+    <string name="progress">Progress</string>
+    <string name="this_week">This week</string>
+    <string name="this_month">This month</string>
+    <string name="this_year">This year</string>
+    <string name="year_2023">2023</string>
+    <string name="total_distance">Total distance in km</string>
+    <string name="time_spent_running">Hours spent running</string>
+    <string name="average_pace">Average pace</string>
+    <string name="calories_burnt">Calories burnt</string>
+    <string name="active_days">Active days</string>
+
+    //Record Activity
+    <string name="start">start</string>
+    <string name="pause">pause</string>
+    <string name="stop">stop</string>
+    <string name="resume">resume</string>
+    <string name="challenge_your_friend">Challenge your friend</string>
+    <string name="do_you_want_to_invite_name">Do you want to invite %1$s to challenge?</string>
+    <string name="invite">Invite</string>
+    <string name="or">OR</string>
+    <string name="do_you_want_to_challenge_your_friend">Do you want to challenge your friend?</string>
+    <string name="run_alone">Run alone</string>
+    <string name="run_with_friend">Run with friend</string>
+    <string name="hide">Hide</string>
+    <string name="close">Close</string>
+    <string name="to_distance">%.2f km</string>
+    <string name="to_kcal">%.0f kcal</string>
+    <string name="to_distance_zero">0,00 km</string>
+    <string name="to_pace_zero">0:00/km</string>
+    <string name="to_duration_zero">00:00</string>
+    <string name="distance">Distance</string>
+    <string name="pace">Pace</string>
+    <string name="duration">Duration</string>
+    <string name="finish_run">Finish run</string>
+    <string name="are_you_sure_you_want_to_finish_the_run">Are you sure you want to finish the run?</string>
+    <string name="finish_and_save">Finish and save</string>
+    <string name="finish_and_delete">Finish and delete</string>
+    <string name="resume_the_run">Resume the run</string>
+    <string name="calories">Calories</string>
+    <string name="paused">Paused</string>
+    <string name="time_distance_notification">Time: %1$s, distance: %2$s</string>
+    <string name="running">Running</string>
+    <string name="track_your_run">Track your run</string>
+
+    //Friends Fragment
+    <string name="friends_list">Friend\'s list</string>
+    <string name="friends_list_is_empty">Friend\s list is empty</string>
+    <string name="add">Add</string>
+    <string name="cancel">Cancel</string>
+    <string name="friend">Friend</string>
+    <string name="accept">Accept</string>
+    <string name="remove">Remove</string>
+    <string name="find_new_friends_using_username">Find new friend using their username</string>
+    <string name="find_your_friend">Find your friend</string>
+    <string name="are_you_sure_you_want_to_remove_this_friend">Are you sure you want to remove this friend?</string>
+    <string name="remove_friend">Remove friend</string>
+    <string name="there_is_no_user_with_this_username">There is no user with this username. Try again with different one</string>
+
+    //Friend fragment
+    <string name="latest_activity">Latest activity</string>
+    <string name="add_this_person_to_friends_to_see_their_activity">Add this person to friends to see their activity</string>
+    <string name="statistics">Statistics</string>
+    <string name="no_activities_yet">No activities yet</string>
+    <string name="no_joint_activities_yet">No joint activities yet</string>
+    <string name="friend_s_activity">%1$s\' activity</string>
+    <string name="joint_activity">Joint activity</string>
+    <string name="your_activity">Your activity</string>
+    <string name="you">You</string>
+
+    //Message fragment
+    <string name="you_colon">You&#58;</string>
+    <string name="chat">Chat</string>
+    <string name="new_message">New message</string>
+    <string name="suggested">Suggested</string>
+    <string name="send_new_message">Send new message</string>
+    <string name="to_colon">To&#58;</string>
+    <string name="write_new_message">Write new message...</string>
+    <string name="no_messages">No messages</string>
+
+    //Profile Fragment
+    <string name="personal_information">Personal information</string>
+    <string name="messages">Messages</string>
+    <string name="friend_requests">Friend requests</string>
+    <string name="run_requests">Run requests</string>
+
+    //About Fragment
+    <string name="profile">Profile</string>
+    <string name="activities">Activities</string>
+    <string name="friends">Friends</string>
+    <string name="challenges">Challenges</string>
+    <string name="are_you_sure_you_want_to_log_out">Are you sure you want to log out?</string>
+
+    //Personal Information Fragment
+    <string name="year_of_birth">Year of birth</string>
+
+    //Settings Fragment
+    <string name="language">Language</string>
+    <string name="dark_mode">Dark mode</string>
+    <string name="delete_account">Delete account</string>
+    <string name="light_mode">Light mode</string>
+    <string name="delete_account_title">Are you sure you want to delete your account?</string>
+    <string name="delete_account_text">This operation cannot be reversed</string>
+    <string name="delete_my_account">Delete my account</string>
+    <string name="input_your_password">Input your password to delete the account</string>
+
+    //Motivation Fragment
+    <string name="header_help_yourself_maintain_motivation_and_discipline">It has long been known that the key to success is motivation and discipline. Help yourself maintain this by a simple reminder of why you\'re doing it!</string>
+    <string name="my_motivation_is_input">My motivation is : • %1$s •  </string>
+
+    //Motivation
+    <string name="just_for_fun">Just for fun</string>
+    <string name="to_lose_some_weight">To lose some weight</string>
+    <string name="to_improve_my_physical_condition">To improve my physical condition</string>
+    <string name="to_improve_my_health">To improve my health</string>
+    <string name="not_chosen">Not chosen</string>
+    <string name="i_want_to_set_my_own_motivational_text">I want to set my own motivational text</string>
+    <string name="i_dont_want_any_motivational_text">I don\'t want any motivational text</string>
+    <string name="my_motivation_is">My motivation is…</string>
+    <string name="meter_motivation"> %d / 70</string>
+
+    //Notification Dialog
+    <string name="back">back</string>
+    <string name="location_permissions_are_disabled">Location permissions are disabled. Go to settings to enable them</string>
+    <string name="fine_location_permissions_are_disabled">To allow Jooksmine to track your run, you need to grant precise location permissions. Go to settings to enable them</string>
+
+    //Body Measurement fragment
+    <string name="track_your_progress_so_far">Track your progress so far. </string>
+    <string name="add_your_measurements">Add your measurements</string>
+    <string name="height_cm">Height (cm)</string>
+    <string name="weight_kg">Weight (kg)</string>
+    <string name="circuits_cm">Optional data. Circuits (cm):</string>
+    <string name="your_bmi">Your BMI </string>
+    <string name="your_weight">Your weight </string>
+    <string name="your_height">Your height </string>
+    <string name="you_havent_added_any_data_yet">You haven\'t added any data yet. Please input your weight to track your progress.</string>
+    <string name="history">History</string>
+    <string name="w_kg">%1$s kg</string>
+    <string name="invalid_input">Invalid input</string>
+    <string name="are_you_sure_you_want_to_remove_this_record">Are you sure you want to remove this record?</string>
+    <string name="remove_record">Remove record</string>
+
+    //Errors
+    <string name="error_generic">Something went wrong</string>
+    <string name="error_generic_try_again">Something went wrong. Please try again</string>
+    <string name="error_this_chat_does_not_exists">This chat does not exists</string>
+    <string name="error_this_user_does_not_exists">This user does not exists</string>
+    <string name="error_binding">Binding cannot be accessed</string>
+    <string name="error_this_username_is_taken">This username is already taken</string>
+    <string name="error_failed_to_load_data">Failed to load data</string>
+    <string name="error_failed_to_save_data">Failed to save data</string>
+    <string name="error_the_phone_number_must_contain_9_digits">The phone number must contain 9 digits</string>
+    <string name="error_select_a_gender">Select a gender</string>
+    <string name="session_expired">Session Expired. Log in again</string>
+
+    //Mocks
+    <string name="lorem_ipsum">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+
+    //Motivation texts
+    <string-array name="weight_loss_texts">
+        <item>Run to redefine your limits, shed the weight, and embrace your strength.</item>
+        <item>Every step burns calories, every run inches you closer to your goal weight.</item>
+        <item>Lace-up, slim down. Running: your personal weight-loss journey</item>
+        <item>Pound the pavement, watch the pounds disappear.</item>
+        <item>Each stride is a step towards the best version of yourself.</item>
+        <item>Run for the body you\'ve always dreamed of.</item>
+        <item>Sweat now, shine later. Running transforms bodies.</item>
+        <item>Your weight-loss journey begins with the first step of a run.</item>
+        <item>Run because you can. Run to see the change you wish to be.</item>
+    </string-array>
+
+    <string-array name="health_texts">
+        <item>Run for a healthier heart, a happier you.</item>
+        <item>Your heartbeat, the rhythm of a healthy life.</item>
+        <item>Running: the best medicine for your body and soul.</item>
+        <item>Every run, a step towards a healthier you.</item>
+        <item>Lace-up for longevity; run for a healthier destiny.</item>
+        <item>Heart health starts with a run.</item>
+        <item>Run for the energy, live with vitality.</item>
+        <item>Your health, your responsibility. Run for a better you.</item>
+        <item>Running: the ultimate prescription for a healthy life.</item>
+    </string-array>
+
+    <string-array name="physical_condition_texts">
+        <item>Run to elevate your stamina, conquer the miles.</item>
+        <item>Condition your body, conquer the world.</item>
+        <item>Run to break your limits, build your endurance.</item>
+        <item>Every run makes you stronger, every stride, more resilient.</item>
+        <item>Run today, outpace your excuses, redefine your limits.</item>
+        <item>Endurance is built one run at a time.</item>
+        <item>Run to push your limits, build your strength.</item>
+        <item>Condition your mind, transform your body, one run at a time.</item>
+        <item>Every run is a step towards a fitter, stronger you.</item>
+    </string-array>
+
+    <string-array name="for_fun_texts">
+        <item>Run for the joy, sprint for the soul.</item>
+        <item>Every step is a victory, every run a celebration.</item>
+        <item>Lace-up, let go, and run towards freedom.</item>
+        <item>Run because it\'s not about the destination; it\'s about the journey.</item>
+        <item>Every mile adds up to your personal story of resilience.</item>
+        <item>Run for the thrill, sprint for the stillness within.</item>
+        <item>Run because the road to success is a marathon</item>
+        <item>Every run is a dance between you and the open road.</item>
+        <item>Run for the love of the journey, the joy of the run.</item>
+        <item>Running: where challenges become conquests, and every step is a victory lap.</item>
+    </string-array>
+</resources>

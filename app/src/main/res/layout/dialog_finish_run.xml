@@ -1,0 +1,183 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/dialog_width"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/dialog_corner_radius">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/dimen_10">
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/DialogHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleType="center"
+            android:text="@string/finish_run" />
+
+        <TextView
+            style="@style/Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/are_you_sure_you_want_to_finish_the_run" />
+
+        <LinearLayout
+            android:id="@+id/ll_run_stats"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_10"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_5"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/Body5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/duration" />
+
+                    <TextView
+                        android:id="@+id/tv_duration"
+                        style="@style/Body5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        tools:text="1h16m" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/Body5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/pace" />
+
+                    <TextView
+                        android:id="@+id/tv_pace"
+                        style="@style/Body5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        tools:text="9,02m/km" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_5"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/Body5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/distance" />
+
+                    <TextView
+                        android:id="@+id/tv_distance"
+                        style="@style/Body5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        tools:text="30km" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/Body5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/calories" />
+
+                    <TextView
+                        android:id="@+id/tv_calories"
+                        style="@style/Body5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        tools:text="491kcal" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bg_resume"
+            style="@style/TrackingButtonsStyle"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_margin="@dimen/margin_14"
+            android:background="@drawable/bg_button_orange"
+            android:text="@string/resume" />
+
+        <Button
+            android:id="@+id/bg_finish_save"
+            style="@style/TrackingButtonsStyle"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginStart="@dimen/margin_14"
+            android:layout_marginEnd="@dimen/margin_14"
+            android:layout_marginBottom="@dimen/margin_3"
+            android:background="@drawable/bg_button_orange"
+            android:text="@string/finish_and_save"
+            android:visibility="gone" />
+
+
+        <Button
+            android:id="@+id/bg_finish_delete"
+            style="@style/TrackingButtonsStyle"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginStart="@dimen/margin_14"
+            android:layout_marginEnd="@dimen/margin_14"
+            android:layout_marginBottom="@dimen/margin_14"
+            android:background="@drawable/bg_button_dark_grey"
+            android:text="@string/finish_and_delete" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

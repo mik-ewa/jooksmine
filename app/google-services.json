@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "759668638923",
+    "firebase_url": "https://fitness-tracking-app-c8ff5-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "fitness-tracking-app-c8ff5",
+    "storage_bucket": "fitness-tracking-app-c8ff5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:759668638923:android:51f7272b2d5114a4c2c74e",
+        "android_client_info": {
+          "package_name": "com.example.fitness_tracking_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8F-GyUSWsAnu2w80Q67rYitYU36O88SM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

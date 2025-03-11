@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.fitness_tracking_app.base.base_components.CustomHeader
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_80"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_120"
+        android:layout_margin="@dimen/margin_12"
+        app:cardCornerRadius="@dimen/dimen_15"
+        app:layout_constraintTop_toBottomOf="@+id/header">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/gradient_card_view">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_image_view"
+                android:layout_width="@dimen/width_80"
+                android:layout_height="@dimen/height_80"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/margin_24"
+                app:cardCornerRadius="@dimen/dimen_50"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/user_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop" />
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/margin_20"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                app:layout_constraintStart_toEndOf="@+id/card_image_view">
+
+                <TextView
+                    android:id="@+id/text_name"
+                    style="@style/CardHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="Ewa Mikulska" />
+
+                <TextView
+                    android:id="@+id/text_username"
+                    style="@style/Body2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="ewabmikulska@gmail.com" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/icon_to_profile"
+                android:layout_width="@dimen/width_50"
+                android:layout_height="@dimen/height_50"
+                android:layout_marginEnd="@dimen/margin_20"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@drawable/icon_arrow"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_12"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+        <include
+            android:id="@+id/item_body_measurements"
+            layout="@layout/item_about" />
+
+        <include
+            android:id="@+id/item_motivation"
+            layout="@layout/item_about" />
+
+        <include
+            android:id="@+id/item_notifications"
+            layout="@layout/item_about" />
+
+        <include
+            android:id="@+id/item_personal_informaion"
+            layout="@layout/item_about" />
+
+        <include
+            android:id="@+id/item_settings"
+            layout="@layout/item_about" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

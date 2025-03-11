@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/ll_find_friends"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.widget.SearchView
+            android:id="@+id/sv_friends"
+            style="@style/CustomSearchViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/margin_8"
+            android:layout_toStartOf="@+id/icon_close"
+            android:iconifiedByDefault="false" />
+
+        <ImageView
+            android:id="@+id/icon_close"
+            android:layout_width="30dp"
+            android:layout_height="36dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="end"
+            android:layout_margin="@dimen/margin_14"
+            android:src="@drawable/icon_close" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fl_placeholder"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/ll_find_friends"
+        android:layout_alignParentBottom="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_find_friends">
+
+        <TextView
+            android:id="@+id/tv_no_friend"
+            style="@style/Body5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/height_50"
+            android:gravity="center"
+            android:text="@string/there_is_no_user_with_this_username"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

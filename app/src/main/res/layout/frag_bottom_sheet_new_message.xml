@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_new_message"
+        style="@style/Body4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_20"
+        android:text="@string/new_message"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_margin="@dimen/margin_20"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/icon_close"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_to"
+        style="@style/Body4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_5"
+        android:text="@string/to_colon"
+        app:layout_constraintBottom_toBottomOf="@+id/sv_message"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/sv_message" />
+
+    <android.widget.SearchView
+        android:id="@+id/sv_message"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_12"
+        android:iconifiedByDefault="false"
+        android:padding="1dp"
+        android:searchIcon="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_to"
+        app:layout_constraintTop_toBottomOf="@+id/tv_new_message" />
+
+    <LinearLayout
+        android:id="@+id/ll_send_new_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_50"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sv_message">
+
+        <ImageView
+            android:layout_width="@dimen/width_60"
+            android:layout_height="@dimen/height_60"
+            android:layout_margin="@dimen/margin_10"
+            android:src="@drawable/icon_send" />
+
+        <TextView
+            style="@style/Body4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/send_new_message" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_suggested"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_5"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/sv_message">
+
+        <TextView
+            style="@style/Body5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_14"
+            android:layout_marginBottom="@dimen/margin_5"
+            android:text="@string/suggested" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_suggested"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

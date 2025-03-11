@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.Fitness_tracking_app" parent="android:Theme.Material.Light.NoActionBar" />
+
+    <style name="CardView.Orange" parent="CardView">
+        <item name="android:foreground">@drawable/gradient_card_view</item>
+    </style>
+
+
+    <style name="CustomDatePickerTheme" parent="ThemeOverlay.MaterialComponents.MaterialCalendar">
+        <item name="colorPrimary">@color/orange</item>
+    </style>
+</resources>

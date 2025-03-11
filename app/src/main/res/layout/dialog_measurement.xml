@@ -1,0 +1,86 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/dialog_width"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/dialog_corner_radius">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/dimen_10">
+
+        <ImageView
+            android:id="@+id/icon_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="@dimen/margin_8"
+            app:srcCompat="@drawable/icon_close" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/DialogHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_minus_20"
+            android:scaleType="center"
+            android:text="@string/weight" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/container_weight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_5"
+            android:orientation="horizontal"
+            android:padding="@dimen/dimen_4">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/weight_kg"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/et_weight"
+                style="@style/Body2"
+                android:layout_width="@dimen/dimen_38"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/bg_input"
+                android:digits="0123456789."
+                android:maxLength="4"
+                android:padding="4dp"
+                android:textCursorDrawable="@null"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/tv_error_weight"
+            style="@style/Error_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="@string/invalid_input"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/button_save"
+            style="@style/ButtonSecondaryStyle"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_margin="@dimen/margin_14"
+            android:background="@drawable/button_secondary_background"
+            android:text="@string/save" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

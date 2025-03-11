@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Jooksmine</string>
+    <string name="log_into_jooksmine">Melden Sie sich bei Jooksmine an</string>
+    <string name="create_new_account">Erstellen Sie ein neues Konto</string>
+    <string name="complete_sign_up">Registrierung abschließen</string>
+    <string name="something_went_wrong_try_again_later">Etwas ist schief gelaufen. Versuchen Sie es später noch einmal</string>
+    <string name="tell_us_more_about_you">Erzählen Sie uns mehr über sich</string>
+    <string name="welcome_to_jooksmine">Willkommen bei Jooksmine</string>
+    <string name="email_address">E-Mail-Adresse</string>
+    <string name="error_email_already_exists">E-Mail-Adresse existiert bereits in Jooksmine</string>
+    <string name="password">Passwort</string>
+    <string name="name">Name</string>
+    <string name="username">Benutzername</string>
+    <string name="gender_at_birth">Geschlecht bei der Geburt</string>
+    <string name="female">Weiblich</string>
+    <string name="male">Männlich</string>
+    <string name="phone_number">Telefonnummer</string>
+    <string name="profile_photo">Profilfoto</string>
+    <string name="weight">Gewicht</string>
+    <string name="weight_optional">Gewicht (kg) <i> - optional </i></string>
+    <string name="height">Größe</string>
+    <string name="height_optional">Größe (cm) <i> - optional</i></string>
+    <string name="confirm_password">Passwort bestätigen</string>
+    <string name="log_in">Einloggen</string>
+    <string name="save">Speichern</string>
+    <string name="log_out">Abmelden</string>
+    <string name="next">Weiter</string>
+    <string name="send_code">Code senden</string>
+    <string name="choose_your_motivation">Wählen Sie Ihre Motivation</string>
+    <string name="login_error">Login fehlgeschlagen. Versuchen Sie es erneut</string>
+    <string name="reset_password">Passwort zurücksetzen</string>
+    <string name="error_passwords_dont_match">Passwörter stimmen nicht überein</string>
+    <string name="forgot_password_reset_password">Passwort vergessen? <b>Passwort zurücksetzen</b></string>
+    <string name="new_to_jooksmine_create_new_account">Neu bei Jooksmine? <b>Erstellen Sie ein neues Konto</b></string>
+    <string name="settings">Einstellungen</string>
+    <string name="body_measurements">Körpermaße</string>
+    <string name="your_motivation">Ihre Motivation</string>
+    <string name="home">Startseite</string>
+    <string name="no_internet_connection_title">Keine Internetverbindung</string>
+    <string name="no_internet_connection_text">Sie sind nicht mit dem Internet verbunden. Die Fortsetzung erfordert eine Internetverbindung.</string>
+    <string name="ok">OK</string>
+    <string name="not_yet_implemented">Noch nicht implementiert</string>
+    <string name="about">Über</string>
+    <string name="code_sent_to_an_email">Code an die E-Mail-Adresse %1$s gesendet</string>
+    <string name="data_successfully_updated">Daten erfolgreich aktualisiert</string>
+    <string name="notifications">Benachrichtigungen</string>
+
+    //weather
+    <string name="to_temperature">%.0f °C</string>
+    <string name="to_humidity">H: %d%%</string>
+    <string name="to_wind">W: %.1f km/h</string>
+
+    //Progress Fragment
+    <string name="progress">Fortschritt</string>
+    <string name="this_week">Diese Woche</string>
+    <string name="this_month">Diesen Monat</string>
+    <string name="this_year">Dieses Jahr</string>
+    <string name="year_2023">2023</string>
+    <string name="total_distance">Gesamtstrecke in km</string>
+    <string name="time_spent_running">Stunden beim Laufen</string>
+    <string name="average_pace">Durchschnittstempo</string>
+    <string name="calories_burnt">Kalorien verbrannt</string>
+    <string name="active_days">Aktive Tage</string>
+
+    //Record Activity
+    <string name="start">Start</string>
+    <string name="pause">Pause</string>
+    <string name="stop">Stop</string>
+    <string name="resume">Fortsetzen</string>
+    <string name="challenge_your_friend">Fordere deinen Freund heraus</string>
+    <string name="do_you_want_to_invite_name">Möchtest du %1$s herausfordern?</string>
+    <string name="invite">Einladen</string>
+    <string name="or">ODER</string>
+    <string name="do_you_want_to_challenge_your_friend">Möchtest du deinen Freund herausfordern?</string>
+    <string name="run_alone">Alleine laufen</string>
+    <string name="run_with_friend">Mit Freund laufen</string>
+    <string name="hide">Verstecken</string>
+    <string name="close">Schließen</string>
+    <string name="to_distance">%.2f km</string>
+    <string name="to_kcal">%.0f kcal</string>
+    <string name="to_distance_zero">0,00 km</string>
+    <string name="to_pace_zero">0:00/km</string>
+    <string name="to_duration_zero">00:00</string>
+    <string name="distance">Entfernung</string>
+    <string name="pace">Tempo</string>
+    <string name="duration">Dauer</string>
+    <string name="finish_run">Lauf beenden</string>
+    <string name="are_you_sure_you_want_to_finish_the_run">Bist du sicher, dass du den Lauf beenden möchtest?</string>
+    <string name="finish_and_save">Beenden und speichern</string>
+    <string name="finish_and_delete">Beenden und löschen</string>
+    <string name="resume_the_run">Lauf fortsetzen</string>
+    <string name="calories">Kalorien</string>
+    <string name="paused">Pausiert</string>
+    <string name="time_distance_notification">Zeit: %1$s, Strecke: %2$s</string>
+    <string name="running">Laufen</string>
+    <string name="track_your_run">Verfolge deinen Lauf</string>
+
+    //Friends Fragment
+    <string name="friends_list">Freundesliste</string>
+    <string name="friends_list_is_empty">Die Freundesliste ist leer</string>
+    <string name="add">Hinzufügen</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="friend">Freund</string>
+    <string name="accept">Akzeptieren</string>
+    <string name="remove">Entfernen</string>
+    <string name="find_new_friends_using_username">Finde neue Freunde mit ihrem Benutzernamen</string>
+    <string name="find_your_friend">Finde deinen Freund</string>
+    <string name="are_you_sure_you_want_to_remove_this_friend">Bist du sicher, dass du diesen Freund entfernen möchtest?</string>
+    <string name="remove_friend">Freund entfernen</string>
+    <string name="there_is_no_user_with_this_username">Es gibt keinen Benutzer mit diesem Benutzernamen. Versuche es mit einem anderen</string>
+
+    //Friend fragment
+    <string name="latest_activity">Neueste Aktivität</string>
+    <string name="add_this_person_to_friends_to_see_their_activity">Füge diese Person zu den Freunden hinzu, um ihre Aktivität zu sehen</string>
+    <string name="statistics">Statistiken</string>
+    <string name="no_activities_yet">Noch keine Aktivitäten</string>
+    <string name="no_joint_activities_yet">Noch keine gemeinsamen Aktivitäten</string>
+    <string name="friend_s_activity">Aktivität von %1$s</string>
+    <string name="joint_activity">Gemeinsame Aktivität</string>
+    <string name="your_activity">Deine Aktivität</string>
+    <string name="you">Du</string>
+
+    //Message fragment
+    <string name="you_colon">Du&#58;</string>
+    <string name="chat">Chat</string>
+    <string name="new_message">Neue Nachricht</string>
+    <string name="suggested">Vorgeschlagen</string>
+    <string name="send_new_message">Neue Nachricht senden</string>
+    <string name="to_colon">An&#58;</string>
+    <string name="write_new_message">Schreibe eine neue Nachricht...</string>
+    <string name="no_messages">Keine Nachrichten</string>
+
+    //Profile Fragment
+    <string name="personal_information">Persönliche Informationen</string>
+    <string name="messages">Nachrichten</string>
+    <string name="friend_requests">Freundschaftsanfragen</string>
+    <string name="run_requests">Laufanfragen</string>
+
+    //About Fragment
+    <string name="profile">Profil</string>
+    <string name="activities">Aktivitäten</string>
+    <string name="friends">Freunde</string>
+    <string name="challenges">Herausforderungen</string>
+    <string name="are_you_sure_you_want_to_log_out">Bist du sicher, dass du dich ausloggen möchtest?</string>
+
+    //Personal Information Fragment
+    <string name="year_of_birth">Geburtsjahr</string>
+
+    //Settings Fragment
+    <string name="language">Sprache</string>
+    <string name="dark_mode">Dunkelmodus</string>
+    <string name="delete_account">Konto löschen</string>
+    <string name="light_mode">Hellmodus</string>
+    <string name="delete_account_title">Bist du sicher, dass du dein Konto löschen möchtest?</string>
+    <string name="delete_account_text">Dieser Vorgang kann nicht rückgängig gemacht werden</string>
+    <string name="delete_my_account">Mein Konto löschen</string>
+    <string name="input_your_password">Gib dein Passwort ein, um das Konto zu löschen</string>
+
+    //Motivation Fragment
+    <string name="header_help_yourself_maintain_motivation_and_discipline">Es ist schon lange bekannt, dass der Schlüssel zum Erfolg Motivation und Disziplin sind. Hilf dir selbst, dies durch eine einfache Erinnerung daran, warum du es tust, aufrechtzuerhalten!</string>
+    <string name="my_motivation_is_input">Meine Motivation ist: • %1$s • </string>
+
+    //Motivation
+    <string name="just_for_fun">Nur zum Spaß</string>
+    <string name="to_lose_some_weight">Um etwas Gewicht zu verlieren</string>
+    <string name="to_improve_my_physical_condition">Um meine körperliche Verfassung zu verbessern</string>
+    <string name="to_improve_my_health">Um meine Gesundheit zu verbessern</string>
+    <string name="not_chosen">Nicht ausgewählt</string>
+    <string name="i_want_to_set_my_own_motivational_text">Ich möchte meinen eigenen Motivationstext festlegen</string>
+    <string name="i_dont_want_any_motivational_text">Ich möchte keinen Motivationstext</string>
+    <string name="my_motivation_is">Meine Motivation ist…</string>
+    <string name="meter_motivation"> %d / 70</string>
+
+    //Notification Dialog
+    <string name="back">Zurück</string>
+    <string name="location_permissions_are_disabled">Standortberechtigungen sind deaktiviert. Gehe zu den Einstellungen, um sie zu aktivieren</string>
+    <string name="fine_location_permissions_are_disabled">Um Jooksmine zu erlauben, deinen Lauf zu verfolgen, musst du präzise Standortberechtigungen gewähren. Gehe zu den Einstellungen, um sie zu aktivieren</string>
+
+    //Body Measurement fragment
+    <string name="track_your_progress_so_far">Verfolge deinen bisherigen Fortschritt.</string>
+    <string name="add_your_measurements">Füge deine Messungen hinzu</string>
+    <string name="height_cm">Höhe (cm)</string>
+    <string name="weight_kg">Gewicht (kg)</string>
+    <string name="circuits_cm">Optionale Daten. Umfang (cm):</string>
+    <string name="your_bmi">Dein BMI</string>
+    <string name="your_weight">Dein Gewicht</string>
+    <string name="your_height">Deine Höhe</string>
+    <string name="you_havent_added_any_data_yet">Du hast noch keine Daten hinzugefügt. Bitte gib dein Gewicht ein, um deinen Fortschritt zu verfolgen.</string>
+    <string name="history">Verlauf</string>
+    <string name="w_kg">%1$s kg</string>
+    <string name="invalid_input">Ungültige Eingabe</string>
+    <string name="are_you_sure_you_want_to_remove_this_record">Bist du sicher, dass du diesen Datensatz entfernen möchtest?</string>
+    <string name="remove_record">Datensatz entfernen</string>
+
+    //Errors
+    <string name="error_generic">Etwas ist schief gelaufen</string>
+    <string name="error_generic_try_again">Etwas ist schief gelaufen. versuchen Sie es erneut</string>
+    <string name="error_this_chat_does_not_exists">Dieser Chat existiert nicht</string>
+    <string name="error_this_user_does_not_exists">Dieser Benutzer existiert nicht</string>
+    <string name="error_binding">Binding kann nicht zugegriffen werden</string>
+    <string name="error_this_username_is_taken">Dieser Benutzername ist bereits vergeben</string>
+    <string name="error_failed_to_load_data">Daten konnten nicht geladen werden</string>
+    <string name="error_failed_to_save_data">Daten konnten nicht gespeichert werden</string>
+    <string name="error_the_phone_number_must_contain_9_digits">Die Telefonnummer muss 9 Ziffern enthalten</string>
+    <string name="error_select_a_gender">Wähle ein Geschlecht aus</string>
+    <string name="session_expired">Sitzung abgelaufen. Bitte melde dich erneut an</string>
+
+
+    //Mocks
+    <string name="lorem_ipsum">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+
+</resources>

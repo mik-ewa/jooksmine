@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/margin_24"
+    android:layout_marginEnd="@dimen/margin_24"
+    android:minHeight="@dimen/height_48">
+
+    <ImageView
+        android:id="@+id/iv_flag"
+        android:layout_width="@dimen/width_24"
+        android:layout_height="@dimen/height_24"
+        android:layout_marginStart="@dimen/margin_10"
+        android:background="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_country"
+        style="@style/TextAppearance.AppCompat.Body1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_10"
+        android:layout_marginEnd="@dimen/margin_10"
+        android:background="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_flag"
+        app:layout_constraintEnd_toStartOf="@+id/iv_is_selected"
+        app:layout_constraintStart_toEndOf="@+id/iv_flag"
+        app:layout_constraintTop_toTopOf="@+id/iv_flag"
+        app:layout_goneMarginEnd="@dimen/margin_10"
+        app:layout_goneMarginStart="@dimen/margin_10"
+        tools:text="Polski" />
+
+    <ImageView
+        android:id="@+id/iv_is_selected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_10"
+        android:src="@drawable/icon_check"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_flag"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/iv_flag" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/margin_10"
+        android:layout_marginEnd="@dimen/margin_10"
+        android:background="@color/grey_75"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

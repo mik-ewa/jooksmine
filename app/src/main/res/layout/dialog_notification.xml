@@ -1,0 +1,52 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/dialog_width"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/margin_2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/dimen_10">
+
+        <TextView
+            android:id="@+id/tv_info"
+            style="@style/Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_2"
+            android:layout_marginBottom="@dimen/dimen_10"
+            android:text="@string/location_permissions_are_disabled"
+            android:textAlignment="center" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/button_back"
+                style="@style/TrackingButtonsStyle"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_margin="@dimen/margin_8"
+                android:layout_weight="1"
+                android:background="@drawable/bg_button_dark_grey"
+                android:text="@string/back" />
+
+            <Button
+                android:id="@+id/button_settings"
+                style="@style/TrackingButtonsStyle"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_margin="@dimen/margin_8"
+                android:layout_weight="1"
+                android:background="@drawable/bg_button_orange"
+                android:text="@string/settings" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

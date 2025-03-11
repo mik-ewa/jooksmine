@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/custom_header"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_80"
+    android:background="@color/grey_50"
+    android:clipToPadding="false"
+    android:paddingStart="@dimen/dimen_4"
+    android:paddingEnd="@dimen/dimen_4">
+
+    <ImageView
+        android:id="@+id/arrow_back"
+        android:layout_width="@dimen/size_min_icon_touch_target"
+        android:layout_height="@dimen/size_min_icon_touch_target"
+        android:layout_marginStart="@dimen/margin_20"
+        android:layout_marginBottom="@dimen/margin_3"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="@dimen/dimen_5"
+        android:rotation="180"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/icon_arrow" />
+
+    <TextView
+        android:id="@+id/header_title"
+        style="@style/CardHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_14"
+        android:layout_marginBottom="@dimen/margin_8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/arrow_back"
+        tools:text="Profile" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_100"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

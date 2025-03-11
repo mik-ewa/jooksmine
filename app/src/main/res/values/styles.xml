@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--ValueField-->
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here -->
+        <item name="colorPrimary">@color/grey_150</item>
+        <item name="colorPrimaryDark">@color/grey_150</item>
+        <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>
+    </style>
+
+    <style name="AppBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+    </style>
+
+    <style name="AppModalStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/bg_rounded_bottom_sheet</item>
+    </style>
+
+    <style name="ValueField">
+        <item name="android:background">@drawable/bg_edittext_input</item>
+        <item name="android:padding">@dimen/dimen_5</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/grey</item>
+        <item name="android:fontFamily">@font/kanit_light</item>
+        <item name="android:drawablePadding">@dimen/dimen_5</item>
+        <item name="android:textSize">@dimen/text_14</item>
+    </style>
+
+    <style name="RadioButtonTextStyle">
+        <item name="android:background">@drawable/bg_radio_button_grey</item>
+        <item name="android:paddingLeft">@dimen/dimen_8</item>
+        <item name="android:paddingRight">@dimen/dimen_8</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/kanit_light</item>
+        <item name="android:textSize">@dimen/text_12</item>
+    </style>
+
+    <style name="ButtonSecondaryStyle">
+        <item name="backgroundTint">@null</item>
+        <item name="android:background">@drawable/button_secondary_background</item>
+        <item name="fontFamily">@font/kanit_medium</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/orange</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="TrackingButtonsStyle">
+        <item name="android:fontFamily">@font/kanit_medium</item>
+        <item name="android:textSize">9sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="TrackingInfoStyle">
+        <item name="android:fontFamily">@font/kanit_medium</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="ButtonPrimaryStyle">
+        <item name="android:fontFamily">@font/kanit_medium</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="CardHeader">
+        <item name="android:fontFamily">@font/kanit_medium</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="ActivityText">
+        <item name="android:fontFamily">@font/kanit_medium</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">#94000000</item>
+    </style>
+
+    <style name="DialogHeader">
+        <item name="android:fontFamily">@font/kanit_medium</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="CardBigText">
+        <item name="android:fontFamily">@font/kanit_regular</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="CardLightText">
+        <item name="android:fontFamily">@font/kanit_light</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="MessageTextStyle">
+        <item name="android:fontFamily">@font/kanit_regular</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="ChatStyle">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/grey</item>
+    </style>
+
+    <style name="SmallInfoStyle">
+        <item name="android:fontFamily">@font/kanit_regular</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#120C5A</item>
+    </style>
+
+    <style name="Body0">
+        <item name="android:fontFamily">@font/kanit_light</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/grey</item>
+    </style>
+
+    <style name="Body1">
+        <item name="android:fontFamily">@font/kanit_light</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Body2">
+        <item name="android:fontFamily">@font/kanit_light</item>
+        <item name="android:textSize">@dimen/text_14</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Body3">
+        <item name="android:fontFamily">@font/kanit_regular</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Body4">
+        <item name="android:fontFamily">@font/kanit_medium</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Body5">
+        <item name="android:fontFamily">@font/kanit_regular</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Body6">
+        <item name="android:fontFamily">@font/kanit_medium</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Body7">
+        <item name="android:fontFamily">@font/kanit_regular</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#7C7C7C</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="Body8">
+        <item name="android:fontFamily">@font/kanit_medium</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Body9">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="CustomTabStyle" parent="Widget.MaterialComponents.TabLayout">
+        <item name="tabTextAppearance">@style/CustomTabTextAppearance</item>
+        <item name="tabIndicatorColor">@color/transparent</item>
+        <item name="tabSelectedTextColor">@color/black</item>
+    </style>
+
+    <style name="CustomTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/kanit_medium</item>
+    </style>
+
+    <style name="StatisticFontOrange">
+        <item name="android:fontFamily">@font/bebas_neue_regular</item>
+        <item name="android:textSize">26sp</item>
+        <item name="android:textColor">@color/orange150</item>
+    </style>
+
+    <style name="ProfileTitle">
+        <item name="android:fontFamily">@font/bebas_neue_regular</item>
+        <item name="android:textSize">26sp</item>
+        <item name="android:textColor">#83000000</item>
+    </style>
+
+    <style name="ChallengeTitle">
+        <item name="android:fontFamily">@font/bebas_neue_regular</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="WeatherTitle">
+        <item name="android:fontFamily">@font/bebas_neue_regular</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="Error">
+        <item name="android:fontFamily">@font/kanit_light</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#8E1C1C</item>
+    </style>
+
+    <style name="Error_small">
+        <item name="android:fontFamily">@font/kanit_light</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">#8E1C1C</item>
+    </style>
+
+    <style name="Error_username">
+        <item name="android:fontFamily">@font/kanit_medium</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">#C01D1D</item>
+    </style>
+
+    <style name="CustomSearchViewStyle" parent="Widget.AppCompat.SearchView">
+        <item name="android:queryBackground">@color/transparent</item>
+        <item name="android:background">@drawable/background_search_view</item>
+        <item name="searchIcon">@null</item>
+    </style>
+</resources>
